@@ -6,8 +6,8 @@
  *
  */
 
-function showStarsFour(parameter) {
+function showStarsFive(parameter) {
   // your code goes here
 }
 
-showStarsFour(5);
+showStarsFive(5);
