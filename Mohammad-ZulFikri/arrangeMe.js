@@ -2,19 +2,19 @@ let number = 1234;
 let name = "mai";
 
 number = number.toString()
-let numberLastIndex = number[number.length -1]
+const numberLastIndex = number[number.length -1]
 number = number.slice(0, -1)
-let numberInputIndex = Math.floor(number.length / 2)
-let numberFirstSubString = number.substring(0, numberInputIndex) 
-let numberLastSubString = number.substring(numberInputIndex, number.length)
+const numberInputIndex = Math.floor(number.length / 2)
+const numberFirstSubString = number.substring(0, numberInputIndex) 
+const numberLastSubString = number.substring(numberInputIndex, number.length)
 number = numberFirstSubString + numberLastIndex + numberLastSubString
 
 name = name.toString()
-let nameLastIndex = name[name.length -1]
+const nameLastIndex = name[name.length -1]
 name = name.slice(0, -1)
-let nameInputIndex = Math.floor(name.length / 2)
-let nameFirstSubString = name.substring(0, nameInputIndex) 
-let nameLastSubString = name.substring(nameInputIndex, name.length)
+const nameInputIndex = Math.floor(name.length / 2)
+const nameFirstSubString = name.substring(0, nameInputIndex) 
+const nameLastSubString = name.substring(nameInputIndex, name.length)
 name = nameFirstSubString + nameLastIndex + nameLastSubString
 
 // Atur supaya mereka menjadi
