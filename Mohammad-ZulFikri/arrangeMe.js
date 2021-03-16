@@ -1,26 +1,25 @@
 let number = 1234;
 let name = "mai";
 
-number = number.toString()
-const numberLastIndex = number[number.length -1]
-number = number.slice(0, -1)
-const numberInputIndex = Math.floor(number.length / 2)
-const numberFirstSubString = number.substring(0, numberInputIndex) 
-const numberLastSubString = number.substring(numberInputIndex, number.length)
-number = numberFirstSubString + numberLastIndex + numberLastSubString
+const arrangeMe = (param) => {
 
-name = name.toString()
-const nameLastIndex = name[name.length -1]
-name = name.slice(0, -1)
-const nameInputIndex = Math.floor(name.length / 2)
-const nameFirstSubString = name.substring(0, nameInputIndex) 
-const nameLastSubString = name.substring(nameInputIndex, name.length)
-name = nameFirstSubString + nameLastIndex + nameLastSubString
+  param = param.toString()
+  const lastString = param[param.length -1]
+  param = param.slice(0, -1)
+  const middleIndex = Math.floor(param.length / 2)
+  const firstSub = param.substring(0, middleIndex) 
+  const lastSub = param.substring(middleIndex, param.length)
+
+  param = firstSub + lastString + lastSub
+
+  return param;
+}
+
 
 // Atur supaya mereka menjadi
 
-console.log(number); // Hasilnya adalah 1423
-console.log(name); // Hasilnya "mia"
+console.log(arrangeMe(number)); // Hasilnya adalah 1423
+console.log(arrangeMe(name)); // Hasilnya "mia"
 
 /*
  * Hint

@@ -2,9 +2,7 @@ let A = 10;
 let B = 5;
 
 // Silakan ketik sesuatu di bawah agar saat kita console.log maka A menjadi 5, dan B menjadi 10
-let c = 10
-A = B
-B = c
+[A, B] = [B, A]
 
 /*
  * Hint
